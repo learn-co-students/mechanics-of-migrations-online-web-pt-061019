@@ -1,4 +1,9 @@
-class CreateArtists < ActiveRecord::Migration[4.2]
+# db/migrate/01_create_artists.rb
+
+class CreateArtists < ActiveRecord::Migration[5.2]
+  def up
+  end
+
   def change
     create_table :artists do |t|
       t.string :name
@@ -7,4 +12,8 @@ class CreateArtists < ActiveRecord::Migration[4.2]
       t.string :hometown
     end
   end
+  
+  def down
+  end
+
 end
